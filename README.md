@@ -1,6 +1,6 @@
-#Global configuration
+# Global configuration
 
-##Terminal
+## Terminal
 I'm using **zsh** + **oh-my-zsh** with the **xiong-chiamiov-plus** theme.
 
 To apply my theme, run this command in your **home** folder :
@@ -32,7 +32,7 @@ After installation complete edit your plugin line in your zshrc :
 plugins=(git zsh-autocomplete zsh-autosuggestions zsh-syntax-highlighting you-should-use zsh-bat)
 ```
 
-##Neovim
+## Neovim
 
 Clone the repository :
 
