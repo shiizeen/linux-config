@@ -1,5 +1,51 @@
 # Global configuration
 
+## Prerequisites
+
+You need to install **zsh**, **oh-my-zsh** and **neovim**
+
+### ZSH 
+
+Ubuntu, Debian & derivatives
+```
+apt install -y zsh
+```
+
+Arch
+```
+pacman -Syy zsh
+```
+Fedora
+```
+dnf install -y zsh
+```
+### oh-my-zsh 
+
+curl : 
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+wget :
+```
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+```
+
+### neovim
+
+Ubuntu, Debian & derivatives
+
+[python3-neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md#ubuntu)
+
+Arch
+```
+pacman -Syy neovim
+```
+Fedora
+```
+dnf copr enable agriffis/neovim-nightly
+dnf install -y neovim python3-neovim
+```
+
 ## Terminal
 I'm using **zsh** + **oh-my-zsh** with the **xiong-chiamiov-plus** theme.
 
