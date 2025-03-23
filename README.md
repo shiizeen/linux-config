@@ -141,13 +141,13 @@ For the plugins, I'm not using a lot of them but there's my plugins list in my z
 After installation you can copy the **.zshrc** file from the **.config file to your home folder**
 
 ```
-cp .zshrc /home/$USER/ (assuming that you are in the .config folder)
+cp .zshrc /home/$USER/ #assuming that you are in the .config folder
 ```
 
 and source it
 
 ```
-source .zshrc (assuming that you are in your home folder)
+source .zshrc #assuming that you are in your home folder
 ```
 
 and enjoy!
