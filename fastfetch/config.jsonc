@@ -1,11 +1,11 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-    	"source": "~/.config/fastfetch/ascii/kitty.txt",
+    	"source": "~/.config/fastfetch/ascii/triforce.txt",
+      "color": {"1": "yellow"},
     	"padding": {
-      	"top": 7,
-        "right": 6,
-        "bottom": 2
+      	"top": 9,
+        "right": 4
     	}
     },
 

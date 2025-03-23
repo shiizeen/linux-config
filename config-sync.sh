@@ -2,9 +2,9 @@
 
 REPO="$HOME/dev/linux-config"
 
-cp -ru "$HOME/.config/nvim" "$REPO/.config/"
-cp -ru "$HOME/.config/kitty" "$REPO/.config/"
-cp -ru "$HOME/.config/fastfetch" "$REPO/.config/"
+cp -ru "$HOME/.config/nvim" "$REPO"
+cp -ru "$HOME/.config/kitty" "$REPO"
+cp -ru "$HOME/.config/fastfetch" "$REPO"
 cp -u "$HOME/.zshrc" "$REPO/"
 
 cd "$REPO" || exit
