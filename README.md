@@ -47,6 +47,9 @@ dnf install -y neovim python3-neovim
 ```
 
 ## Terminal
+
+For the emulator I'm using **Kitty**, with a custom minimalistic configuration. 
+
 I'm using **zsh** + **oh-my-zsh** with the **xiong-chiamiov-plus** theme.
 
 To apply my theme, run this command in your **home** folder :
