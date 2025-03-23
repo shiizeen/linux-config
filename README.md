@@ -29,19 +29,19 @@ You’ll need to install the following:
 
 #### Ubuntu / Debian
 
-```
+```bash
 apt install -y zsh
 ```
 
 #### Arch
 
-```
+```bash
 pacman -Syy zsh
 ```
 
 #### Fedora
 
-```
+```bash
 dnf install -y zsh
 ```
 
@@ -49,13 +49,13 @@ dnf install -y zsh
 
 #### curl
 
-```
+```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 #### wget
 
-```
+```bash
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 ```
 
@@ -67,13 +67,13 @@ sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/ins
 
 #### Arch
 
-```
+```bash
 pacman -Syy neovim
 ```
 
 #### Fedora
 
-```
+```bash
 dnf copr enable agriffis/neovim-nightly
 dnf install -y neovim python3-neovim
 ```
@@ -82,13 +82,13 @@ dnf install -y neovim python3-neovim
 
 #### Arch (requires yay or paru)
 
-```
+```bash
 yay -S ttf-firacode-nerd
 ```
 
 #### Ubuntu / Fedora :
 
-```
+```bash
 mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FiraCode.zip
@@ -102,20 +102,20 @@ Note: The link might change over time — make sure to grab the latest version i
 
 Clone the repository:
 
-```
+```bash
 git clone https://github.com/shiizeen/linux-config.git ~/.config
 
 ```
 
 For the emulator I'm using **kitty**, with a custom minimalistic configuration, that can be configure from:
 
-```
+```bash
 ~/.config/kitty/kitty.conf
 ```
 
 You can also check, or edit my custom **fastfetch** config:
 
-```
+```bash
 ~/.config/fastfetch/config.jsonc
 ```
 
@@ -140,13 +140,13 @@ For the plugins, I'm not using a lot of them but there's my plugins list in my z
 
 After installation you can copy the **.zshrc** file from the **.config file to your home folder**
 
-```
+```bash
 cp .zshrc /home/$USER/ #assuming that you are in the .config folder
 ```
 
 and source it
 
-```
+```bash
 source .zshrc #assuming that you are in your home folder
 ```
 
