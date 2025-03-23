@@ -1,70 +1,131 @@
 # Global configuration
 
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+  - [ZSH](#zsh)
+  - [Oh My Zsh](#oh-my-zsh)
+  - [Neovim](#neovim)
+  - [Font: FiraCode Nerd Font](#font-firacode-nerd-font)
+- [Terminal](#terminal)
+- [ZSH Configuration](#zsh-configuration)
+  - [Plugins](#plugins)
+
+---
+
 ## Prerequisites
 
-You need to install **zsh**, **oh-my-zsh** and **neovim**
+You’ll need to install the following:
 
-### ZSH 
+- **ZSH**
+- **Oh My Zsh**
+- **Kitty**
+- **Neovim**
+- **FiraCode Nerd Font**
 
-Ubuntu, Debian & derivatives
+---
+
+### ZSH
+
+#### Ubuntu / Debian
+
 ```
 apt install -y zsh
 ```
 
-Arch
+#### Arch
+
 ```
 pacman -Syy zsh
 ```
-Fedora
+
+#### Fedora
+
 ```
 dnf install -y zsh
 ```
-### oh-my-zsh 
 
-curl : 
+### Oh My Zsh
+
+#### curl
+
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-wget :
+
+#### wget
+
 ```
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 ```
 
 ### neovim
 
-Ubuntu, Debian & derivatives
+#### Ubuntu / Debian
 
 [python3-neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md#ubuntu)
 
-Arch
+#### Arch
+
 ```
 pacman -Syy neovim
 ```
-Fedora
+
+#### Fedora
+
 ```
 dnf copr enable agriffis/neovim-nightly
 dnf install -y neovim python3-neovim
 ```
 
+### Font: FiraCode Nerd Font
+
+#### Arch (requires yay or paru)
+
+```
+yay -S ttf-firacode-nerd
+```
+
+#### Ubuntu / Fedora :
+
+```
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FiraCode.zip
+unzip FiraCode.zip
+fc-cache -fv
+```
+
+Note: The link might change over time — make sure to grab the latest version if needed.
+
 ## Terminal
 
-For the emulator I'm using **Kitty**, with a custom minimalistic configuration. 
+Clone the repository:
+
+```
+git clone https://github.com/shiizeen/linux-config.git ~/.config
+
+```
+
+For the emulator I'm using **kitty**, with a custom minimalistic configuration, that can be configure from:
+
+```
+~/.config/kitty/kitty.conf
+```
+
+You can also check, or edit my custom **fastfetch** config:
+
+```
+~/.config/fastfetch/config.jsonc
+```
+
+## ZSH Configuration
 
 I'm using **zsh** + **oh-my-zsh** with the **xiong-chiamiov-plus** theme.
 
-To apply my theme, run this command in your **home** folder :
+## Plugins
 
-```
-sed -i 's/^ZSH_THEME="[^"]*"/ZSH_THEME="xiong-chiamiov-plus"/' ~/.zshrc
-```
-
-And source it :
-
-```
-source ~/.zshrc
-```
-
-For the plugins, I'm not using a lot of them but there's my plugins list in my zshrc file, feel free to check
+For the plugins, I'm not using a lot of them but there's my plugins list in my zshrc file, feel free to check.
 
 | Plugins                 | How to install                                                                           |
 | ----------------------- | ---------------------------------------------------------------------------------------- |
@@ -75,18 +136,18 @@ For the plugins, I'm not using a lot of them but there's my plugins list in my z
 | you-should-use          | https://github.com/MichaelAquilina/zsh-you-should-use?tab=readme-ov-file                 |
 | zsh-bat                 | https://github.com/fdellwing/zsh-bat?tab=readme-ov-file#install                          |
 
-After installation complete edit your plugin line in your zshrc :
+<!-- -->
+
+After installation you can copy the **.zshrc** file from the **.config file to your home folder**
 
 ```
-plugins=(git zsh-autocomplete zsh-autosuggestions zsh-syntax-highlighting you-should-use zsh-bat)
+cp .zshrc /home/$USER/ (assuming that you are in the .config folder)
 ```
 
-## Neovim
-
-Clone the repository :
+and source it
 
 ```
-git clone https://github.com/shiizeen/linux-config.git ~/.config/
+source .zshrc (assuming that you are in your home folder)
 ```
 
-and enjoy
+and enjoy!
