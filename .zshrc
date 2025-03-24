@@ -16,6 +16,9 @@ fi
 
 #Aliases
 alias n="nvim"
+alias update="sudo pacman -Syyu && yay -Syyu && flatpak update"
 
 #Exec fastfetch at start
 fastfetch
+
+
