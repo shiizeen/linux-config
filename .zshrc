@@ -17,7 +17,7 @@ fi
 #Aliases
 alias n="nvim"
 alias update="sudo pacman -Syyu && yay -Syyu && flatpak update"
-
+alias ssh="kitty +kitten ssh"
 #Exec fastfetch at start
 fastfetch
 
